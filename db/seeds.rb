@@ -12,18 +12,16 @@ url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
 ingredients_serialized = open(url).read
 ingredients = JSON.parse(ingredients_serialized)
 
-puts "clearing DB"
+puts 'clearing DB'
 Ingredient.destroy_all
 
-puts "creating ingredients"
+puts 'creating ingredients'
 
-ingredients["drinks"].each do |ingredient|
-  ing = ingredient["strIngredient1"]
-  new_ing = Ingredient.new(name: "#{ing}")
+ingredients['drinks'].each do |ingredient|
+  ing = ingredient['strIngredient1']
+  new_ing = Ingredient.new(name: `#{ing}`)
   puts "saving #{new_ing.name}"
   new_ing.save!
 end
 
-puts "Finished!"
-
-
+puts 'Ingridents Finished!'
