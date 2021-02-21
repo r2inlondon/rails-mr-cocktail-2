@@ -7,6 +7,8 @@
 <%= render 'doses/new' %>
 <% @cocktail.doses.each do |dose| %>
   <p><%= dose.description %> of <%= dose.ingredient.name %></p>
+  <%= link_to "Remove", dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } %>
+    
 <% end %>
 
 <%= link_to 'home', cocktails_path %>
