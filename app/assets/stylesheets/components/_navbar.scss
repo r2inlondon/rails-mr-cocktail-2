@@ -7,7 +7,7 @@
   color: white;
   font-size: 30px;
   &:hover {
-    color: gray;
+    color: #e684a6;
     text-decoration: none;
   }
 }
@@ -22,7 +22,7 @@
 
 .btn-ghost {
   color: white;
-  border: 1px solid white;
+  // border: 1px solid white;
   padding: 8px 24px;
   border-radius: 50px;
   font-weight: lighter;
@@ -30,7 +30,7 @@
   transition: opacity 0.3s ease;
 
   &:hover {
-    color: gray;
+    color: #7db4cb;
       text-decoration: none;
   }
 }
