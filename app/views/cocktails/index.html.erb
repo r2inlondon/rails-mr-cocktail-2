@@ -1,5 +1,10 @@
-<% @cocktails.each do |cocktail| %>
-  <p><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
-<% end %>
+<%= render "components/banner" %>
 
-<%= link_to 'New Cocktail', new_cocktail_path %>
+<div class="container my-5">
+  <h2 class="text-center">Check out our cocktails and recipies</h2>
+  
+  <div class="cards-area">
+    <%= render "components/card" %>
+  </div>
+
+</div>

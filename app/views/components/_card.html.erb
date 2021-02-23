@@ -1,0 +1,9 @@
+  
+  
+
+  
+<div class="card-category d-flex d-flex justify-content-around">        
+    <% @cocktails.each do |cocktail| %>
+      <p><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
+    <% end %>
+</div>
