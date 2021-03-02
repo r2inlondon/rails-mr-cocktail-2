@@ -4,7 +4,9 @@
     <i class="fas fa-cocktail"></i>
   <% end %>
   <div class="mr-c">
-    <h4>Mr Cocktail</h4>
+    <%= link_to cocktails_path do %>
+      <h4>Mr Cocktail</h4>
+    <%end %>
   </div>
   
  <%= link_to "New Cocktail", new_cocktail_path, class: "btn btn-ghost" %>
