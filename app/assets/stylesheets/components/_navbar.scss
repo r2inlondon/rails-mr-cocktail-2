@@ -15,11 +15,18 @@
 }
 
 .mr-c {
+  a {
+    text-decoration: none;
+  }
   h4 {
     color: white;
     font-family: 'Dancing Script', cursive;
     font-size: 28px;
-    text-decoration: none;
+    &:hover {
+      
+      transition-duration: 0.3s;
+      transform: scale(1.5);      
+    }
   }
 }
 
