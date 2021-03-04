@@ -3,6 +3,11 @@
     color: #7db4cb;
 }
 
+.cards-area {
+    width: 100%;
+    // margin-bottom: 30px;    
+}
+
 .card-category {
     background-size: cover;
     background-position: center;
@@ -16,10 +21,27 @@
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     border-radius: 5px;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    margin: 20px;
+    margin: 30px;
     a {
         font-family: 'Lato', sans-serif;
         color: white;    
         text-decoration: none;        
     }     
+}
+
+@media only screen and (max-width: 411px) {
+    .card-category {
+        width:  112px;;
+        height: 142px;
+        text-align: center;
+        margin: 0 15px 30px 15px; 
+    }
+}
+
+@media only screen and (min-width: 1372px) {
+    .cards-area {
+        width: 80%;
+        margin: auto;        
+        margin-bottom: 10px;
+    }
 }
