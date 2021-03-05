@@ -1,0 +1,46 @@
+.cocktail-container {
+  margin: auto;
+  width: 30vw;
+}
+
+@media only screen and (max-width: 411px) {
+  .cocktail-container {
+    width: 99vw;
+    // height: 100px;
+  }
+  .doses-box {
+    width: 350px;
+  }
+}
+
+.card-ingredients {
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  // border-radius: 50%;
+  width:  300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  // text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  // box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin: auto;
+  h1 {
+      font-family: 'Lato', sans-serif;
+      color: white;    
+      text-decoration: none;        
+  }     
+}
+
+
+.ingredients-box {
+  margin-top: 20px;
+  display: flex;
+  // color: white;
+  p {
+    margin-right: 10px;
+  }  
+}
