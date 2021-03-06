@@ -3,17 +3,13 @@
   width: 30vw;
 }
 
-@media only screen and (max-width: 411px) {
-  .cocktail-container {
-    width: 99vw;
-    // height: 100px;
-  }
-  .doses-box {
-    width: 350px;
-  }
+.sub-title {
+  font-size: large;
+  text-align: center;
+  margin: 15px 0 15px 0;
 }
 
-.card-ingredients {
+.cocktail-image {
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -35,12 +31,27 @@
   }     
 }
 
-
 .ingredients-box {
   margin-top: 20px;
-  display: flex;
-  // color: white;
+  display: flex;  
+  width: 300px;    
+  margin: auto;
   p {
     margin-right: 10px;
   }  
+}
+
+.doses-box {
+  margin: auto;
+  width: 300px;    
+}
+
+// MEDIA QUERIES !!!
+
+@media only screen and (max-width: 411px) {
+  .cocktail-container {
+    width: 99vw;
+    // height: 100px;
+  }
+
 }
