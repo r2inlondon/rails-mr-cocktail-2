@@ -2,7 +2,10 @@
   justify-content: space-between;
   background: black;
   padding: 1rem;
-  width: 99vw;
+  // width: 99vw;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .fas {
