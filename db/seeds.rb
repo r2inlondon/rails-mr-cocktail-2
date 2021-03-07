@@ -19,7 +19,7 @@ puts 'creating ingredients'
 
 ingredients['drinks'].each do |ingredient|
   ing = ingredient['strIngredient1']
-  new_ing = Ingredient.new(name: `#{ing}`)
+  new_ing = Ingredient.new(name: "#{ing}")
   puts "saving #{new_ing.name}"
   new_ing.save!
 end
